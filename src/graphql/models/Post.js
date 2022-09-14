@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const post = mongoose.model('Post', {
+const Post = mongoose.model('Post', {
     title: {
         type: String,
         required: true,
@@ -17,3 +17,5 @@ const post = mongoose.model('Post', {
         required: true
     }
 })
+
+export default Post
